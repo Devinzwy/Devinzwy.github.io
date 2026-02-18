@@ -373,26 +373,6 @@
                     </p>
                 </div>
             </div>
-
-            <!-- 下载区域 -->
-            <div class="text-center mt-5 pt-5 border-top" data-aos="fade-up" data-aos-delay="100">
-                <p class="mb-4 text-muted">
-                    <span class="lang-en">For more details, please download my documents below:</span>
-                    <span class="lang-cn">如需更多详细信息，请下载以下文档：</span>
-                </p>
-                <div class="d-flex justify-content-center gap-3 flex-wrap">
-                    <a href="files/Yin_Resume.pdf" class="btn btn-outline-custom">
-                        <i class="fas fa-file-alt me-2"></i> 
-                        <span class="lang-en">Download Resume (1 Page)</span>
-                        <span class="lang-cn">下载简历 (单页)</span>
-                    </a>
-                    <a href="files/Yin_CV.pdf" class="btn btn-custom">
-                        <i class="fas fa-file-pdf me-2"></i> 
-                        <span class="lang-en">Download Full CV</span>
-                        <span class="lang-cn">下载完整履历 (CV)</span>
-                    </a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -547,7 +527,7 @@
                             <div class="impact-overlay">
                                 <div class="d-flex">
                                     <div class="stat-box border-end">
-                                        <span class="stat-number">276+</span>
+                                        <span class="stat-number">290+</span>
                                         <span class="stat-label">Citations</span>
                                     </div>
                                     <div class="stat-box border-end">
@@ -689,13 +669,33 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Footer (包含访问统计) -->
+    <footer style="background: var(--primary-color); color: #ccc; padding: 40px 0; text-align: center; font-size: 0.9rem;">
         <div class="container">
-            <p>&copy; 2025 Dr. Zhewen Yin. All Rights Reserved.</p>
+            <p class="mb-2">&copy; 2025 Dr. Your Name. All Rights Reserved.</p>
+            
+            <!-- 访问量统计区域 -->
+            <!-- style="display:none" 是为了防抖，等数据加载出来后脚本会自动让它显示 -->
+            <div class="d-inline-block text-white-50 small mt-2" style="font-size: 0.8rem; opacity: 0.7;">
+                <span id="busuanzi_container_site_pv" style="display:none">
+                    <i class="fas fa-eye me-1"></i> 
+                    <span class="lang-en">Views:</span><span class="lang-cn">浏览次数:</span> 
+                    <span id="busuanzi_value_site_pv" class="fw-bold"></span>
+                </span>
+                
+                <span class="mx-2">|</span>
+                
+                <span id="busuanzi_container_site_uv" style="display:none">
+                    <i class="fas fa-user me-1"></i> 
+                    <span class="lang-en">Visitors:</span><span class="lang-cn">访客人数:</span> 
+                    <span id="busuanzi_value_site_uv" class="fw-bold"></span>
+                </span>
+            </div>
         </div>
     </footer>
 
+    <!-- 不蒜子统计脚本  -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <!-- JS 逻辑 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- 引入 AOS JS -->
